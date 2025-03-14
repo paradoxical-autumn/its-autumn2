@@ -1,0 +1,127 @@
+@import "animations.css";
+
+html {
+    background-color: black;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    text-align: center;
+
+    --danger-colour: oklch(66.2% 0.2246 25.12);
+    --safe-colour: oklch(78.53% 0.1503 141.97);
+}
+
+.warning-popup {
+    border: 0.25rem dashed #3f3f3f;
+    padding: 2rem;
+
+    background-color: white;
+    color: black;
+
+    font-family: 'Space Mono', 'Courier New', Courier, monospace;
+
+    margin-bottom: 1rem;
+
+    animation: 1s fade-top cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.button-holder {
+    animation: 1s fade-bottom cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.warning-button {
+    font-size: xx-large;
+
+    rotate: -2deg;
+
+    background-color: black;
+    font-weight: bold;
+    color: white;
+
+    font-family: 'Space Mono', 'Courier New', Courier, monospace;
+
+    padding: 1rem;
+    
+    border: 0.25rem dashed var(--danger-colour);
+
+    cursor: pointer;
+
+    margin-bottom: 2rem;
+}
+
+.warning-button:hover {
+    rotate: 0deg;
+
+    color: black;
+    background-color: white;
+
+    box-shadow: 0px 4px 50px var(--danger-colour);
+}
+
+.warning-button-smol {
+    font-size: medium;
+
+    rotate: -2deg;
+
+    background-color: black;
+    font-weight: bold;
+    color: white;
+
+    font-family: 'Space Mono', 'Courier New', Courier, monospace;
+
+    padding: 1rem;
+    
+    border: 0.25rem dashed var(--danger-colour);
+
+    cursor: pointer;
+}
+
+.warning-button-smol:hover {
+    rotate: 0deg;
+
+    color: black;
+    background-color: white;
+
+    box-shadow: 0px 4px 50px var(--danger-colour);
+}
+
+.wrn-btn-grn {
+    border: 0.25rem dashed var(--safe-colour);
+}
+
+.wrn-btn-grn:hover {
+    box-shadow: 0px 4px 50px var(--safe-colour);
+}
+
+@media not (prefers-reduced-motion) {
+    .warning-button {
+        transition: background-color 0.5s ease-out,
+        color 0.5s ease-out,
+        rotate 0.5s cubic-bezier(0.34, 1.56, 0.64, 1),
+        box-shadow 0.25s ease-out,
+        border-width 0.5s ease-out;
+    }
+
+    .warning-button:hover {
+        animation: shake 0.8s steps(1,end) infinite;
+
+        border-width: 0.5rem;
+    }
+
+    .warning-button-smol {
+        transition: background-color 0.5s ease-out,
+        color 0.5s ease-out,
+        rotate 0.5s cubic-bezier(0.34, 1.56, 0.64, 1),
+        box-shadow 0.25s ease-out,
+        border-width 0.5s ease-out,
+        border-color 0.25s ease-out;
+    }
+
+    .warning-button-smol:hover {
+        border-width: 0.5rem;
+    }
+}

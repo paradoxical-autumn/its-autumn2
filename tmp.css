@@ -1,0 +1,103 @@
+
+body {
+    image-rendering:pixelated;
+	background-image: url("data/landing/bg04.png");
+	background-size:cover;
+    background-position:right;
+	background-attachment: fixed;
+	background-color:#f4f4f4;
+	color:#181818;
+	font-family: hack, monospace;
+	font-size:14px;
+	padding:0px;
+    line-height:1.25;
+    overflow:hidden;
+}
+
+.box {
+    color:#181818;
+    width:400px;
+    background-color:#f4f4f4;
+    padding:12px;
+    outline: 2px dashed #181818;
+    outline-offset:-4px;
+    margin:auto;
+    position:relative;
+}
+
+.head {
+    position:absolute;
+    background-image: url("/data/landing/hello.png");
+    background-size:100% 100%;
+    width:564px;
+    height:84px;
+    top:14px;
+    left:14px;
+}
+
+.foot {
+    position:absolute;
+    background-image: url("/data/landing/icon.png");
+    width:457px;
+    height:67px;
+    bottom:14px;
+    right:14px;
+}
+
+.enter {
+    font-family:elegant, monospace;
+    font-weight:normal;
+    font-size:58px;
+    color:#f4f4f4;
+    position:relative;
+    text-align:center;
+    background-color:#181818;
+    width:270px;
+    margin:auto;
+    height:64px;
+    top:-6px;
+    transform: rotate(2deg);
+    letter-spacing:8px;
+    border: solid 2px #181818;
+}
+
+.enter a{
+    all:unset;
+    left:4px;
+    bottom:6px;
+    position:relative;
+    cursor:crosshair;
+}
+
+.enter:hover{
+    animation:jitter 0.8s steps(1,end) infinite;
+    text-shadow:2px 2px 0px #fff;
+    color:#181818;
+    background-color:#f4f4f4;
+    border: solid 2px #f4f4f4;
+    border-image: url("data/ants.gif") 1 repeat;
+}
+
+.container{
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:500px;
+    transform:translate(-50%,-50%);
+}
+
+@keyframes jitter
+		{
+		0%	{ transform: skew(-7deg) translate(0px, 0px) scalex(1) scaley(1.03) rotate(0deg);}
+		10%	{ transform: skew(0.3deg) translate(-1px, 0px) scalex(1.07) scaley(1) rotate(0deg); }
+		20%	{ transform: skew(2deg) translate(3px, 0px) scalex(1) scaley(1) rotate(0deg); }
+		30%	{ transform: skew(0deg) translate(0px, 2px) scalex(1.08) scaley(1) rotate(0deg); }
+		40%	{ transform: skew(-0.5deg) translate(1px, -5px) scalex(1) scaley(1.004) rotate(0deg); }
+		50%	{ transform: skew(-0.5deg) translate(0px, 0px) scalex(1.1) scaley(1) rotate(0deg); }
+		60%	{ transform: skew(0deg) translate(-3px, 0px) scalex(1) scaley(1) rotate(0deg); }
+		70%	{ transform: skew(0.5deg) translate(-1px, -4px) scalex(0.95) scaley(1) rotate(0deg); }
+		80%	{ transform: skew(3deg) translate(3px, 0px) scalex(1) scaley(1.03) rotate(0deg); }
+		90%	{ transform: skew(1deg) translate(0px, 0px) scalex(1.08) scaley(1) rotate(0deg); }
+		100%	{ transform: skew(-0.5deg) translate(1px, 5px) scalex(1) scaley(1.12) rotate(0deg); }
+		}
+
