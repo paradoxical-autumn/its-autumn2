@@ -22,10 +22,14 @@
     </div>
 
     <div class="button-holder">
-        <a href="/">
-            <button class="warning-button" id="warning-button">HOME</button>
-        </a>
+        <button class="warning-button" id="warning-button">HOME</button>
     </div>
+
+    <script type="text/javascript">
+        document.getElementById("warning-button").onclick = function () {
+            location.href = "/";
+        };
+    </script>
 </body>
 
 </html>
