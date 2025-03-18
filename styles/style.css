@@ -1,3 +1,6 @@
+@import "fonts.css";
+
 html { 
     background-color: black;
+    color: white;
 }
