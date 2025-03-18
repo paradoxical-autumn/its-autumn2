@@ -1,6 +1,18 @@
 @import "fonts.css";
 
-html { 
-    background-color: black;
-    color: white;
+:root { 
+    --main-color: oklch(83.33% 0.1406 186.67);
+    --bg-color: oklch(21.9% 0.0195 186.67);
+
+    --warning-color: oklch(66.2% 0.2246 25.12);
+    --alert-color: oklch(55.06% 0.2302 295.1);
+}
+
+html {
+    background: var(--bg-color);
+    overflow-x: hidden;
+}
+
+body {
+    color: var(--main-color);
 }
