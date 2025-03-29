@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>autumn's website - 404</title>
 
+    <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="/styles/warning.css">
     <script src="/scripts/index.js" type="module"></script>
 
@@ -16,20 +17,13 @@
 </head>
 
 <body>
-    <div class="warning-popup">
-        <h1>404</h1>
-        <p>the page you requested wasn't found. lol.</p>
+    <div class="crt-effect canvas">
+        <h1><span class="title-path" aria-hidden="true">~/autumns-website/</span>404</h1>
+        <hr class="separator" aria-hidden="true"/>
+        <p>the page you requested wasn't found. try messing with your search query or use the links below</p>
+        <div class="box social-links" w3-include-html="/templates/header.html">
+        </div>
     </div>
-
-    <div class="button-holder">
-        <button class="warning-button" id="warning-button">HOME</button>
-    </div>
-
-    <script type="text/javascript">
-        document.getElementById("warning-button").onclick = function () {
-            location.href = "/";
-        };
-    </script>
 </body>
 
 </html>

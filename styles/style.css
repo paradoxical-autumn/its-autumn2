@@ -74,7 +74,7 @@ a, a:visited {
 }
 
 @keyframes marquee {
-    0% { mask-position: calc(var(--separator-height) * 4) 0; }
+    0% { mask-position: calc(var(--separator-height) * 4 * -1) 0; }
 }
 
 .separator {
@@ -110,4 +110,8 @@ a, a:visited {
     border: 1px solid var(--main-color);
 
     text-wrap: wrap;
+}
+
+.title-path {
+    opacity: 0.5;
 }
