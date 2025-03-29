@@ -60,7 +60,7 @@ a, a:visited {
 
 .footer {
     margin: auto;
-    width: max-content;
+    width: min(500px, 75vw) !important;
     padding: 1rem;
     text-align: center;
     border: 1px solid var(--main-color);

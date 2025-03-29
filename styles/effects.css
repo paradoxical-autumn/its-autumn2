@@ -2,7 +2,7 @@
 .crt-effect::before {
 	content: ' ';
 	display: block;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	bottom: 0;
@@ -12,4 +12,39 @@
 	z-index: 15;
 	background-size: 100% 2px, 3px 100%;
 	pointer-events: none;
+}
+
+#noise-overlay {
+	background-blend-mode: multiply;
+	background: url("/img/bgi/noise/noise01.png");
+	filter: contrast(1.5) brightness(0.4) hue-rotate(90deg);
+	animation: noise 0.3s steps(4) infinite;
+	display: block;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: 100vh;
+	width: 100vw;
+	pointer-events: none;
+	z-index: 10;
+
+	opacity: 0.4;
+}
+
+@keyframes noise {
+	0% {
+		background: url("/img/bgi/noise/noise01.png");
+	}
+	25% {
+		background: url("/img/bgi/noise/noise02.png");
+	}
+	50% {
+		background: url("/img/bgi/noise/noise03.png");
+	}
+	75% {
+		background: url("/img/bgi/noise/noise04.png");
+	}
 }
