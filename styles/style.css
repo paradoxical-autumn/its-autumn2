@@ -15,8 +15,18 @@
     --residual-glow-time: 0.5s;
 }
 
+::selection {
+    background-color: oklch(from var(--main-color) calc(l * 0.5) c h);
+}
+
 .canvas {
     padding: 1.8rem;
+}
+
+.box {
+    border: 1px solid var(--main-color);
+    padding: 1rem;
+    margin-bottom: 1rem;
 }
 
 html {
@@ -45,14 +55,14 @@ a, a:visited {
     margin-bottom: 1rem;
 }
 
-.header > * {
+.boxed-button {
     border: 1px solid var(--main-color);
     padding: 0.5rem;
 
     transition: color var(--residual-glow-time) linear, background-color var(--residual-glow-time) linear;
 }
 
-.header > *:hover {
+.boxed-button:hover {
     background-color: var(--main-color);
     color: oklch(from var(--main-color) calc(l * 0.1) c h);
 
@@ -75,6 +85,15 @@ a, a:visited {
 
     overflow: hidden;
     width: 100%;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+    align-items: center;
+    justify-content: center;
 }
 
 .footer {
