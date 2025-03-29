@@ -11,6 +11,8 @@
     --separator-height: 16px;
 
     --text-shadow-size: 7px;
+
+    --residual-glow-time: 0.5s;
 }
 
 html {
@@ -42,6 +44,15 @@ a, a:visited {
 .header > * {
     border: 1px solid var(--main-color);
     padding: 0.5rem;
+
+    transition: color var(--residual-glow-time) linear, background-color var(--residual-glow-time) linear;
+}
+
+.header > *:hover {
+    background-color: var(--main-color);
+    color: oklch(from var(--main-color) calc(l * 0.1) c h);
+
+    transition: color 0s linear, background-color 0s linear;
 }
 
 @keyframes marquee {
