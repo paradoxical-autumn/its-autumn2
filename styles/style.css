@@ -40,6 +40,10 @@ body {
     color: var(--main-color);
 }
 
+h1 {
+    word-wrap: break-word;
+}
+
 a, a:visited {
     color: var(--main-color);
     text-decoration: 1px underline;
@@ -94,6 +98,8 @@ a, a:visited {
 
     align-items: center;
     justify-content: center;
+
+    flex-wrap: wrap;
 }
 
 .footer {
