@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /templates/
+Disallow: /img/
+Disallow: /scripts/
+Disallow: /dev/
