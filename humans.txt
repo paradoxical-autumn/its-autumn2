@@ -1,0 +1,20 @@
+/* TEAM */
+This website is FOSS so not everyone is lsited here
+
+    LEAD: "Paradoxical" Autumn C.
+    contact: its.just.autumn793 [at] gmail [dot] com
+    Website: you're on it right now!
+    GitHub: https://github.com/paradoxical-autumn
+    Matrix: https://matrix.to/#/@paradox:1024cats.social
+
+/* CONTRIBUTIONS */
+
+    Check out the attribution page!
+
+/* SITE */
+
+    Last updated: 29/03/2025
+    Language: English (United Kingdom)
+    Doctype: HTML5
+    IDE: Visual Studio Code, Notepad
+    Software: LiveServer, git, GitHub, GitHub Pages, krita, StackOverflow, Reddit

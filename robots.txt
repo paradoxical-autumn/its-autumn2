@@ -4,3 +4,4 @@ Disallow: /templates/
 Disallow: /img/
 Disallow: /scripts/
 Disallow: /dev/
+Disallow: /humans.txt
