@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" style="--main-color: white;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>autumn's website - apotrope</title>
+    <meta name="description" content="the home page for the apotrope storyline">
+
+    <meta property="og:title" content="apotrope - paradoxical autumn's site">
+    <meta property="og:description" content="the home page for the apotrope storyline">
+
+    <link rel="stylesheet" href="/styles/style.css">
+    <script src="/scripts/index.js" type="module"></script>
+    <script src="/scripts/modules/animations.js" defer></script>
+    <style>
+        .body-holder {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            margin-bottom: 1rem;
+        }
+
+        .body {
+            text-align: center;
+            width: 66ch;
+        }
+    </style>
+</head>
+<body>
+    <div class="crt-effect canvas" id="canvas">
+        <!-- <img id="noise-overlay" loading="lazy"> -->
+        <h1 style="text-align: center;">~/APOTROPE</h1>
+        <aside w3-include-html="/templates/header.html" class="header" style="align-items: center; justify-content: center;"></aside>
+        <hr class="separator" aria-hidden="true"/>
+        <div class="body-holder">
+            <p class="typewrite body">Apotrope is the name of a Creative Writing and Explorative project being created by paradoxical autumn. You may choose to <a href="/apotrope/char.html">read about some characters</a> in this early build of the website.</p>
+        </div>
+        
+        <footer w3-include-html="/templates/footer.html"></footer>
+    </div>
+</body>
+</html>

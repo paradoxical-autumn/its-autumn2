@@ -103,6 +103,14 @@ a, a:visited {
     flex-wrap: wrap;
 }
 
+.subtext {
+    opacity: 0.75; font-size: 0.75rem;
+}
+
+.rambling {
+    mask-image: linear-gradient(to right, black, transparent 95%);
+}
+
 .footer {
     margin: auto;
     width: min(500px, 75vw) !important;
