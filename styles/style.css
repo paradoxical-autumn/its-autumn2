@@ -15,6 +15,10 @@
     --residual-glow-time: 0.5s;
 }
 
+.canvas {
+    padding: 1.8rem;
+}
+
 html {
     background-color: oklch(from var(--main-color) calc(l * 0.25) c h);
     overflow-x: hidden;
