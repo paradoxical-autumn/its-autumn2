@@ -1,18 +1,69 @@
 @import "fonts.css";
+@import "effects.css";
+@import "animations.css";
 
 :root { 
     --main-color: oklch(83.33% 0.1406 186.67);
-    --bg-color: oklch(21.9% 0.0195 186.67);
 
     --warning-color: oklch(66.2% 0.2246 25.12);
     --alert-color: oklch(55.06% 0.2302 295.1);
+
+    --separator-height: 16px
 }
 
 html {
-    background: var(--bg-color);
+    background-color: oklch(from var(--main-color) calc(l * 0.25) c h);
     overflow-x: hidden;
 }
 
 body {
     color: var(--main-color);
+}
+
+a, a:visited {
+    color: var(--main-color);
+    text-decoration: 1px underline;
+    border-bottom: 1px solid;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 1rem;
+}
+
+.header > * {
+    border: 1px solid var(--main-color);
+    padding: 0.5rem;
+}
+
+@keyframes marquee {
+    0% { mask-position: calc(var(--separator-height) * 4) 0; }
+}
+
+.separator {
+    border: none;
+    height: var(--separator-height);
+    background: var(--main-color) repeat-x 0 0;
+    mask: url("/img/bgi/repeating\ background.png");
+    mask-repeat: repeat;
+    mask-size: calc(var(--separator-height) / 2);
+
+    animation: marquee 5s linear infinite;
+
+    overflow: hidden;
+    width: 100%;
+}
+
+.footer {
+    margin: auto;
+    width: max-content;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid var(--main-color);
+
+    text-wrap: wrap;
 }
