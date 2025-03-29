@@ -8,12 +8,16 @@
     --warning-color: oklch(66.2% 0.2246 25.12);
     --alert-color: oklch(55.06% 0.2302 295.1);
 
-    --separator-height: 16px
+    --separator-height: 16px;
+
+    --text-shadow-size: 7px;
 }
 
 html {
     background-color: oklch(from var(--main-color) calc(l * 0.25) c h);
     overflow-x: hidden;
+
+    text-shadow: 0px 0px var(--text-shadow-size) var(--main-color);
 }
 
 body {
