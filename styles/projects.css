@@ -1,0 +1,30 @@
+.projects-grid-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 90vw;
+}
+
+.projects-grid > div {
+    border: 1px solid var(--main-color);
+    padding: 1rem;
+}
+
+.project-tags {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    color: oklch(0.7 0.1927 342);
+    text-shadow: 0px 0px var(--text-shadow-size) oklch(0.7 0.1927 342);
+    font-style: italic;
+}
