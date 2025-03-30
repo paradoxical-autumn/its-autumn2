@@ -13,6 +13,25 @@
     <script src="/scripts/index.js" type="module"></script>
     <script src="/scripts/modules/animations.js" defer></script>
     <style>
+        pre {
+            font-family: "Fragment Mono", monospace;
+            background-color: black;
+            color: white;
+            padding: 0.8rem;
+
+            white-space: pre-wrap;
+            /* white-space: -moz-pre-wrap; */
+            /* white-space: -pre-wrap; */
+            /* white-space: -o-pre-wrap; */
+            word-wrap: break-word;
+        }
+
+        h1 {
+            word-wrap: break-word;
+            text-wrap: wrap;
+            white-space: pre-wrap;
+        }
+
         .body-holder {
             display: flex;
             flex-direction: column;
@@ -24,7 +43,7 @@
 
         .body {
             text-align: center;
-            width: 66ch;
+            width: min(66ch, 85vw);
         }
     </style>
 </head>
@@ -32,7 +51,7 @@
     <div class="crt-effect canvas" id="canvas">
         <!-- <img id="noise-overlay" loading="lazy"> -->
         <h1 style="text-align: center;">~/APOTROPE</h1>
-        <aside w3-include-html="/templates/header.html" class="header" style="align-items: center; justify-content: center;"></aside>
+        <aside w3-include-html="/templates/apotrope_header.html" class="header" style="align-items: center; justify-content: center;"></aside>
         <hr class="separator" aria-hidden="true"/>
         <div class="body-holder">
             <p class="typewrite body">Apotrope is the name of a Creative Writing and Explorative project being created by paradoxical autumn. You may choose to <a href="/apotrope/char.html">read about some characters</a> in this early build of the website.</p>
