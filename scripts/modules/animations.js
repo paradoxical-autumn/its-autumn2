@@ -1,4 +1,6 @@
 function writeAnimation(element, delay= 5, fade_duraction = 250, blur = false) {
+    let animation_finished = false;
+
     const original_html = element.innerHTML;
     const content = element.innerText;
     element.innerText = '';
@@ -8,7 +10,11 @@ function writeAnimation(element, delay= 5, fade_duraction = 250, blur = false) {
     element.appendChild(wrapper);
 
     document.getElementById('canvas').addEventListener('click', () => {
+        if (animation_finished) {
+            return;
+        }
         wrapper.innerHTML = original_html;
+        animation_finished = true;
     });
 
     for (let i = 0; i < content.length; i++) {
@@ -30,14 +36,17 @@ function writeAnimation(element, delay= 5, fade_duraction = 250, blur = false) {
     }
 
     setTimeout(() => {
+        if (animation_finished) {
+            return;
+        }
         wrapper.innerHTML = original_html;
+        animation_finished = true;
     }, content.length * delay + fade_duraction);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
     var z, i
     z = document.getElementsByClassName("typewrite")
-    console.log(z)
     for (i = 0; i < z.length; i++) {
         writeAnimation(z[i], 7, 250, true)
     }
