@@ -14,7 +14,7 @@ export function includeHTML() {
                     if (this.status == 200) { elmnt.innerHTML = this.responseText; }
                     if (this.status == 404) {
                         elmnt.innerHTML = `ERR IN HTML-INCLUDE: Page '${file}' not found.`;
-                        elmnt.style = "color: var(--warning-color); border: 1px solid var(--warning-color); padding: 1rem;";
+                        elmnt.style = "color: var(--warning-color); border: 1px solid var(--warning-color); padding: 1rem; text-shadow: 0px 0px var(--text-shadow-size) var(--warning-color);";
                     }
                     /* Remove the attribute, and call this function once more: */
                     elmnt.removeAttribute("w3-include-html");
