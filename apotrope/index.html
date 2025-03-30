@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" style="--main-color: white;">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,19 @@
 
     <link rel="stylesheet" href="/styles/style.css">
     <script src="/scripts/index.js" type="module"></script>
+
+    <!-- animations MUST be followed by an inline stylesheet for a set up -->
     <script src="/scripts/modules/animations.js" defer></script>
+    <style>
+        .typewrite {
+            display: none;
+        }
+
+        .tyepwrite-show {
+            display: block;
+        }
+    </style>
+
     <style>
         pre {
             font-family: "Fragment Mono", monospace;
@@ -47,20 +60,25 @@
         }
     </style>
 </head>
+
 <body>
     <div class="crt-effect canvas" id="canvas">
         <!-- <img id="noise-overlay" loading="lazy"> -->
         <h1 style="text-align: center;">~/APOTROPE</h1>
-        <aside w3-include-html="/templates/apotrope_header.html" class="header" style="align-items: center; justify-content: center;"></aside>
+        <aside w3-include-html="/templates/apotrope_header.html" class="header"
+            style="align-items: center; justify-content: center;"></aside>
         <p style="text-align: center;">
             <em>Don't like the text animation? It can be skipped by clicking.</em>
         </p>
-        <hr class="separator" aria-hidden="true"/>
+        <hr class="separator" aria-hidden="true" />
         <div class="body-holder">
-            <p class="typewrite body">Apotrope is the name of a Creative Writing and Explorative project being created by paradoxical autumn. You may choose to <a href="/apotrope/char.html">read about some characters</a> in this early build of the website.</p>
+            <p class="typewrite body">Apotrope is the name of a Creative Writing and Explorative project being created
+                by paradoxical autumn. You may choose to <a href="/apotrope/char.html">read about some characters</a> in
+                this early build of the website.</p>
         </div>
-        
+
         <footer w3-include-html="/templates/footer.html"></footer>
     </div>
 </body>
+
 </html>

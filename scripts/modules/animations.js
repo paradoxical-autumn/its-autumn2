@@ -5,6 +5,8 @@ function writeAnimation(element, delay= 5, fade_duraction = 250, blur = false) {
     const content = element.innerText;
     element.innerText = '';
 
+    element.classList.add("tyepwrite-show");
+
     const wrapper = document.createElement('span');
     wrapper.style.display = 'inline-block';
     element.appendChild(wrapper);
