@@ -21,7 +21,7 @@
     }
 }
 
-.projects-grid > div {
+.projects-grid>div {
     border: 1px solid var(--main-color);
     padding: 1rem;
 }
@@ -34,4 +34,9 @@
     text-shadow: 0px 0px var(--text-shadow-size) oklch(0.7 0.1927 342);
     font-style: italic;
     flex-wrap: wrap;
+}
+
+.danger {
+    color: var(--warning-color);
+    text-shadow: 0px 0px var(--text-shadow-size) var(--warning-color);
 }
