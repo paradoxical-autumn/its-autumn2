@@ -105,3 +105,7 @@ pre {
     white-space: pre-wrap;
     word-wrap: break-word;
 }
+
+.embedded-hypr {
+    color: var(--main-colour);
+}
