@@ -1,0 +1,87 @@
+:root {
+    --main-colour: oklch(0.63 0.2065 24.54);
+
+    --separator-height: 16px;
+}
+
+html {
+    background-color: oklch(from var(--main-colour) calc(l / 10) c h);
+    color: var(--main-colour);
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.canvas {
+    padding: 2rem;
+}
+
+#topbar {
+    height: 4rem;
+    background-color: black;
+    border-bottom: 8px solid var(--main-colour);
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#topbar-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.topbar-button {
+    background-color: var(--main-colour);
+    color: white;
+    border: none;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 8px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.topbar-button:hover {
+    scale: 90%;
+}
+
+@keyframes marquee {
+    0% {
+        mask-position: calc(var(--separator-height) * 4 * -1) 0;
+    }
+}
+
+.separator {
+    border: none;
+    height: var(--separator-height);
+    background: var(--main-colour) repeat-x 0 0;
+    mask: url("/img/bgi/repeating\ background.png");
+    mask-repeat: repeat;
+    mask-size: calc(var(--separator-height) / 2);
+
+    animation: marquee 5s linear infinite;
+
+    overflow: hidden;
+    width: 100%;
+}
+
+pre {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
