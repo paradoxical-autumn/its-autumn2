@@ -31,6 +31,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 #topbar-side {
@@ -38,6 +39,22 @@ body {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    overflow: hidden;
+}
+
+@media(max-aspect-ratio: 9/16) {
+    #topbar {
+        flex-direction: column;
+        height: fit-content;
+        align-items: start;
+        justify-content: left;
+    }
+
+    #topbar-side {
+        flex-direction: column;
+        align-items: start;
+        justify-content: left;
+    }
 }
 
 .topbar-button {
@@ -84,4 +101,7 @@ pre {
     font-family: "Special Gothic Expanded One", sans-serif;
     font-weight: 200;
     font-style: normal;
+
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }
