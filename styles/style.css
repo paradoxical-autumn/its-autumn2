@@ -95,6 +95,10 @@ a:visited {
     width: 100%;
 }
 
+hr {
+    color: var(--main-color);
+}
+
 .social-links {
     display: flex;
     flex-direction: row;
