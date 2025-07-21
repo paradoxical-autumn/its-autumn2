@@ -1,0 +1,58 @@
+:root {
+    --blog-padding: 1rem;
+}
+
+.blog-area > * {
+    outline: 1px var(--main-color) solid;
+    padding: var(--blog-padding);
+}
+
+.blog-content {
+    width: min(66ch, 90%) !important;
+}
+
+.blog-index {
+    width: min(15ch, 90%) !important;
+    padding-right: calc(var(--blog-padding) * 3);
+
+    height: min-content;
+}
+
+.blog-index > ul > li {
+    padding-bottom: 0.5rem;
+}
+
+.blog-area {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 2rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    gap: 2rem;
+}
+
+@media (max-aspect-ratio: 1/1) {
+    .blog-area {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-area > * {
+        width: 90% !important;
+    }
+
+    .blog-index {
+        padding-right: var(--blog-padding);
+    }
+}
+
+pre {
+    font-size: x-large;
+    background-color: black;
+    padding: 1rem;
+}
