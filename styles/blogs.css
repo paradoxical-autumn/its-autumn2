@@ -55,4 +55,7 @@ pre {
     font-size: x-large;
     background-color: black;
     padding: 1rem;
+
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }
