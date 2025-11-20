@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>autumn's website - blogs</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta name="description" content="paradoxical autumn's homepage">
+
+    <meta property="og:title" content="blogs - paradoxical autumn's site">
+    <meta property="og:description" content="heya! im paradoxical autumn and i write sometimes.">
+
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/blogs.css">
+    <script src="/scripts/index.js" type="module"></script>
+
+    <style>
+        .danger {
+            color: var(--warning-color);
+            text-shadow: 0px 0px var(--text-shadow-size) var(--warning-color);
+        }
+
+        @keyframes shake {
+            0% {
+                transform: translate(-.3px, .3px)
+            }
+
+            12.5% {
+                transform: translate(-.10px, -.2px)
+            }
+
+            25% {
+                transform: translate(.9px, -.9px)
+            }
+
+            37.5% {
+                transform: translate(.1px, .6px)
+            }
+
+            50% {
+                transform: translate(-.5px, -.9px)
+            }
+
+            67.5% {
+                transform: translate(.7px, -.4px)
+            }
+
+            75% {
+                transform: translate(-.9px, -.10px)
+            }
+
+            87.5% {
+                transform: translate(-.6px, -.4px)
+            }
+
+            100% {
+                transform: translate(0, .3px);
+            }
+        }
+
+        @media not (prefers-reduced-motion) {
+            span[letter-animation="shake"]>* {
+                white-space: break-spaces;
+                display: inline-block;
+                animation: shake 300ms linear calc(var(--index) * 100 * 1ms) infinite alternate;
+            }
+        }
+    </style>
+
+    <script>
+        const span = (text, index) => {
+            const node = document.createElement('span')
+
+            node.textContent = text
+            node.style.setProperty('--index', index)
+
+            return node
+        }
+
+        const byLetter = text =>
+            [...text].map(span)
+
+        const byWord = text =>
+            text.split(' ').map(span)
+    </script>
+
+    <meta name="robots" content="noindex">
+</head>
+
+<body>
+    <div class="crt-effect canvas">
+        <!-- <img id="noise-overlay" loading="lazy"> -->
+        <h1><span class="title-path" aria-hidden="true">blogs/2025-11/</span>bandcamp.html</h1>
+        <aside w3-include-html="/templates/header.html" class="header"></aside>
+        <hr class="separator" aria-hidden="true" />
+        <div class="blog-area">
+            <aside class="blog-index">
+                <p style="font-weight: bold; font-size: larger;">index</p>
+                <ul>
+                    <li>introduction</li>
+                    <li>Why?</li>
+                    <ul>
+                        <li><a href="#rp">Raising prices</a></li>
+                        <li><a href="#ln">Lacking numbers</a></li>
+                        <li><a href="#ma">Monetary abuse</a></li>
+                    </ul>
+                    <li><a href="#NO">"But.. surely you could change distributors?!"</a></li>
+                </ul>
+            </aside>
+            <div class="blog-content">
+                <h1>moving my music to bandcamp</h1>
+                <iframe scrolling="no" style="border: 0;width: 100%;height: 33px;"
+                    src="https://bandcamp.com/band_follow_button_classic/1582074512"></iframe>
+                <p><b>TL;DR:</b></p>
+                <p>hey nerds, quick update</p>
+                <p>remember <i>justAnotherParadox</i>? yeah? okay, well. im pulling all that music from streaming (minus
+                    YOUTUBE) and moving it all to bandcamp</p>
+                <h2>Why?</h2>
+                <p>I've been thinking about this for a while now and its mainly boiled down to a few things. I wont bore
+                    you, so I'll keep it to a nice, consice list</p>
+                <ol>
+                    <li><a href="#rp">Raising prices</a></li>
+                    <li><a href="#ln">Lacking numbers</a></li>
+                    <li><a href="#ma">Monetary abuse</a></li>
+                </ol>
+
+                <h3 id="rp">Raising prices</h3>
+                <p>My music distributor <i>(for those who don't know, uploading music to the internet requires a hellish
+                        corporation called a "distributor," since platforms don't want to create their own upload
+                        button.
+                        They can charge, what they want, whenever they want. There are multiple, but, I don't like any
+                        of 'em)</i></p>
+                <p><i>Wait, where was I again?</i></p>
+                <p>My music distributor (not naming names), had decided to raise the price of my subsription by
+                    £15/month, for an artist that <a href="#ma">barely makes money in the first place.</a> Ouch.</p>
+                <p>Nothing much, but, the first nail in the coffin.</p>
+                <h3 id="ln">Lacking numbers</h3>
+                <p>Do you know how many average monthly listeners I got on <i>all</i> streaming services
+                    <i>combined</i>?
+                </p>
+                <pre>2
+---
+2 Monthly Listeners (SPOTIFY)
+0 (Amazon Music)
+0 (Apple Music)
+0 (whatever else)
+---
+[LIST EXCLUDES YOUTUBE - PLEASE KEEP READING]</pre>
+                <p>2. Every month, 2, both from spotify. I doubt you're reading this, but I want you to know that I love
+                    ya and wish ya the best :3</p>
+                <p><i>Anyway,</i> yeah - no numbers are being pulled from streaming, so, might as well cut 'em because
+                    <i>i need money as i am living in a capitalistic society</i>
+                </p>
+                <p>Now, there is one exclusion to this - YouTube (and YouTube music) - this was pulling about 30 per
+                    month? And that's <i>long</i> after release. So, I'm keeping my shit there - mainly as its also
+                    FREEEEEEE</p>
+                <h3 id="ma">Monetary abuse</h3>
+                <p>hey quick q how much money do you think ive made from music distribution?</p>
+                <p>actually, the GROSS profits over these past 2 years?</p>
+                <p>£50? £25? £10? £5?</p>
+                <pre>GROSS PROFIT: £2.36</pre>
+                <p>i mean, i dont stream much, but, thats still somethi--</p>
+                <pre>DISTRIBUTION COST (<span class="danger">-£32.00</span> per year) * 2: <span class="danger">-£64.00</span>
+INCOME:                                    £02.36
+-------------------------------------------------
+NET PROFIT:                               <span class="danger" split-by="letter"
+                            letter-animation="shake">-£61.64</span></pre>
+                <p><i>Well, that's not too good.</i> It costs me <i class="danger"><span split-by="letter"
+                            letter-animation="shake">more</span></i> to leave my music online. So, I hope you now see my
+                    main reason for removing myself from distribution</p>
+                <p>(oh also to even be able to "cash out" you need to make at least £10 GROSS, which makes sense :P)</p>
+                <h2 id="NO">"But.. surely you could change distributors?!"</h2>
+                <p>i could. and theyd probably be cheaper.</p>
+                <p style="margin-top: 7rem;">i wont though. for <a href="/blogs/2025-11/etc/spotify.html">a few other
+                        reasons</a>.</p>
+            </div>
+        </div>
+        <footer w3-include-html="/templates/footer.html"></footer>
+    </div>
+
+    <script>
+        const isReduced = window.matchMedia(`(prefers-reduced-motion: reduce)`) === true || window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true
+
+        if (!isReduced) {
+            console.log("motion OK!")
+            const splitTargets = document.querySelectorAll('[split-by]')
+
+            splitTargets.forEach(node => {
+                const type = node.getAttribute('split-by')
+
+                let nodes = null;
+
+                if (type === 'letter') {
+                    nodes = byLetter(node.textContent)
+                }
+                else if (type === 'word') {
+                    nodes = byWord(node.textContent)
+                }
+
+                if (nodes) {
+                    node.firstChild.replaceWith(...nodes)
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>
