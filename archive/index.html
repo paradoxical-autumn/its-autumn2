@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
+
+    <meta name="robots" content="noindex">
+
+    <style>
+        html {
+            background-color: #1f1f1f;
+        }
+
+        body {
+            max-width: min(66ch, 90%) !important;
+            margin: auto;
+            color: white;
+            font-family: 'JetBrains Mono', 'Courier New', Courier, monospace;
+        }
+
+        .rainbow-text {
+            display: inline-block;
+            font-size: 3rem;
+            background: linear-gradient(90deg in oklch, #ed4245, #e78d40, #e2d45b, #78d385, #4bc9e7, #bd9ad2, #ed4245);
+            /* background: repeating-linear-gradient(45deg in oklch, red, blue, red); */
+            background-clip: text;
+            color: transparent;
+            background-size: 200% 100%;
+
+            animation: rainbowanim 5s linear infinite;
+        }
+
+        @keyframes rainbowanim {
+            0% {
+                background-position: 0% 50%
+            }
+
+            100% {
+                background-position: 200% 50%
+            }
+        }
+
+        a {
+            color: #4bc9e7
+        }
+
+        a:visited {
+            color: #bd9ad2
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #808080;
+            overflow: visible;
+            text-align: center;
+            height: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color: #ed4245">ARCHIVE.html</h1>
+    <p>this archive contains content that was available on this website that i have decided to remove, for whatever reason.</p>
+    <p>links on these pages will most likely be non-functional, so, navigating them can be tricky.</p>
+    <p>have fun, i guess.</p>
+</body>
+
+</html>
